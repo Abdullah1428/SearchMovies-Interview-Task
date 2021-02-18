@@ -1,0 +1,12 @@
+version: "3"
+services:
+  moviessearch:
+    build: ./moviessearch
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+  api:
+    build: ./api
+    ports:
+      - "5000:5000"

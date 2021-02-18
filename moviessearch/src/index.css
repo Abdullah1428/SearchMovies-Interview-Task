@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  background-color: gainsboro;
+}
+
+header {
+  padding: 50px 15px 0px;
+}
+
+header h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 15;
+}
+
+.searchBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.searchBox :focus {
+  box-shadow: 0px 0px 0px 3px #4484c4;
+}
+
+h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
+.searchInput {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  color: gray;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.4s ease-out;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.movieCard {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.movieCard:hover {
+  background-color: burlywood;
+  color: white;
+}
+
+.movieImageWrapper {
+  width: 120px;
+  align-self: center;
+}
+
+.movieImage {
+  width: 120px;
+  height: 150px;
+}
+
+.movieInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: space-between;
+}
+
+.movieTitle {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.movieTagAndReleaseDateWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movieTagAndReleaseDateWrapper span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tags {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.tags a {
+  display: inline-block;
+  height: 25px;
+  width: 70px;
+  margin: 1px;
+  background-color: lightgrey;
+  color: black;
+  font-family: "montserrat", sans-serif;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+.movieRatingWrapper {
+  width: 20%;
+  align-self: center;
+  text-align: center;
+}
+
+.vl {
+  width: 1%;
+  border-left: 3px solid grey;
+  height: 150px;
+  margin: 5px;
+}
+
+.movieRating {
+  font-size: 20px;
+}
+
+.movieDetails {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.movieDetails .content {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+  color: #000;
+}
+
+.movieDetails .content .detailWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.movieDetails .content .detailWrapper .image {
+  width: 200px;
+  height: 300px;
+  max-width: 200px;
+  margin: 10px 10px 10px 0px;
+}
+
+.movieDetails .content .detailWrapper .detailContentColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.movieDetails .content .detailWrapper .detailContentColumn .detailContentRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.movieDetails .content .detailWrapper .detailContentColumn .detailTags a {
+  display: inline-block;
+  height: 25px;
+  width: 60px;
+  margin: 1px;
+  text-align: center;
+  background-color: lightgrey;
+  color: black;
+  font-family: "montserrat", sans-serif;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+.movieDetails
+  .content
+  .detailWrapper
+  .detailContentColumn
+  .castDirectorWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.movieDetails
+  .content
+  .detailWrapper
+  .detailContentColumn
+  .castDirectorWrapper
+  .castDetails {
+  margin-right: 80px;
+}
+
+.movieDetails .content .goBack {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  background: lightgray;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.movieDetails .content .goBack:hover {
+  background: #223343;
+}
+
+.movieDetails .content .comments .commenter {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.movieDetails .content .comments .commenter span {
+  font-size: 12px;
+  align-self: center;
+  color: gray;
+}
+
+.movieDetails .content .comments .commentDescription p {
+  color: gray;
+  font-weight: 400;
+  width: 60%;
+  font-size: 12px;
+}
